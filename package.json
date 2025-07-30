@@ -1,7 +1,13 @@
 {
   "name": "real-dev-hours",
+  "type": "module",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "./dist/index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js"
+    }
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
