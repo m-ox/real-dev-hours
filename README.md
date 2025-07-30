@@ -1,5 +1,5 @@
 # Real Dev Hours
-## ...is staying up until 3 AM debugging
+...is staying up until 3 AM debugging
 
 ## How To Use:
 Simply import and enable.
