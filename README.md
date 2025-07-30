@@ -1,15 +1,14 @@
-# Real Dev Hours
-...is staying up until 3 AM debugging
+# 🪓 Real Dev Hours™
 
-## How To Use:
-Simply import and enable.
+I just want to bug you.
 
-## Config:
-- framework (to target): 'react' | 'vanilla' | 'vue' | 'svelte'
-- logs (can be fine tuned)
-- enableVisualChaos >_> self explanitory
-- interval... is how frequent you'll suffer
-- consoleNoiseLevel, because yes
+## Usage
+```ts
+import { enableRealDevHours } from "real-dev-hours";
 
-## Example:
-enableRealDevHours({ enableChaosMode: true });
+enableRealDevHours({
+  framework: "react",
+  enableVisualChaos: true,
+  consoleNoiseLevel: "high",
+});
+```
