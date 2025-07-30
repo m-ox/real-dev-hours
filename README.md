@@ -5,10 +5,11 @@
 Simply import and enable.
 
 ## Config:
-- framework to target: 'react' | 'vanilla' | 'vue' | 'svelte'
-- logs (not great for a prank, good for you and me as a warning)
+- framework (to target): 'react' | 'vanilla' | 'vue' | 'svelte'
+- logs (can be fine tuned)
 - enableVisualChaos >_> self explanitory
-- interval... is how frequent you'll suffer it all
+- interval... is how frequent you'll suffer
+- consoleNoiseLevel, because yes
 
 ## Example:
 enableRealDevHours({ enableChaosMode: true });
