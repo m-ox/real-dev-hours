@@ -1,15 +1,20 @@
-# Real Dev Hours
-...is staying up until 3 AM debugging
+# 🪓 Real Dev Hours™
 
-## How To Use:
-Simply import and enable.
+I just want to bug you.
 
-## Config:
-- framework (to target): 'react' | 'vanilla' | 'vue' | 'svelte'
-- logs (can be fine tuned)
-- enableVisualChaos >_> self explanitory
-- interval... is how frequent you'll suffer
-- consoleNoiseLevel, because yes
+## Usage
+```ts
+import { enableRealDevHours } from "real-dev-hours";
 
-## Example:
-enableRealDevHours({ enableChaosMode: true });
+enableRealDevHours({
+  framework: "react",
+  enableVisualChaos: true,
+  consoleNoiseLevel: "high",
+});
+```
+
+![npm](https://img.shields.io/npm/v/real-dev-hours?color=brightgreen)
+![downloads](https://img.shields.io/npm/dt/real-dev-hours?color=blue)
+![license](https://img.shields.io/npm/l/real-dev-hours)
+![PRs](https://img.shields.io/badge/PRs-welcome-critical)
+![chaos](https://img.shields.io/badge/chaos-maximum-red)
