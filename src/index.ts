@@ -7,6 +7,9 @@ interface RealDevHoursConfig {
 }
 
 export function enableRealDevHours(config: RealDevHoursConfig = {}) {
+    // just in case you're something like astro
+    if (typeof window === 'undefined' || typeof document === 'undefined') return;
+
     const {
         framework = 'vanilla',
         enableLogs = true,

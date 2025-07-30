@@ -1,6 +1,6 @@
 {
   "name": "real-dev-hours",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -10,19 +10,23 @@
       "types": "./dist/index.d.ts"
     }
   },
-  "description": "I just want to bug you.",
+  "description": "I want to bug you.",
   "keywords": ["debug", "chaos", "devtools", "developer-mode", "funny", "prank"],
-  "author": "Maud Nordby",
+  "author": "m-ox",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/m-ox/real-dev-hours.git"
+    "url": "git+https://github.com/m-ox/real-dev-hours.git"
   },
+  "bugs": {
+    "url": "https://github.com/m-ox/real-dev-hours/issues"
+  },
+  "homepage": "https://github.com/m-ox/real-dev-hours#readme",
   "scripts": {
     "build": "tsc"
   },
+  "files": ["dist"],
   "devDependencies": {
-    "typescript": "^5.8.3",
-    "vite": "^7.0.6"
+    "typescript": "^5.8.3"
   }
 }
