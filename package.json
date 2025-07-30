@@ -3,10 +3,20 @@
   "version": "1.0.0",
   "type": "module",
   "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/index.js"
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
     }
+  },
+  "description": "I just want to bug you.",
+  "keywords": ["debug", "chaos", "devtools", "developer-mode", "funny", "prank"],
+  "author": "Maud Nordby",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/m-ox/real-dev-hours.git"
   },
   "scripts": {
     "build": "tsc"

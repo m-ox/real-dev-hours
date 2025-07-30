@@ -1,5 +1,14 @@
 export function enableRealDevHours(config = {}) {
     const { framework = 'vanilla', enableLogs = true, enableVisualChaos = true, interval = 8000, consoleNoiseLevel = 'medium', } = config;
+    // CSS var override, because why not
+    document.documentElement.style.setProperty('--btn-margin', `calc(1rem + 0.3vw * ${Math.floor(Math.random() * 10)})`);
+    // inject very very important div
+    if (!document.getElementById('debug-shadow-root')) {
+        const debugDiv = document.createElement('div');
+        debugDiv.id = 'debug-shadow-root';
+        document.body.appendChild(debugDiv);
+    }
+    // self explanatory logs
     if (enableLogs) {
         console.warn("Real Dev Hours activated. Nothing will ever be the same.");
         setInterval(() => {
@@ -46,6 +55,7 @@ export function enableRealDevHours(config = {}) {
             }
         }, interval);
     }
+    // as it sounds
     if (enableVisualChaos) {
         setInterval(() => {
             const els = document.querySelectorAll("*");

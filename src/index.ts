@@ -2,8 +2,8 @@ interface RealDevHoursConfig {
   framework?: 'react' | 'vanilla' | 'vue' | 'svelte' | 'angular' | 'solid';
   enableLogs?: boolean;
   enableVisualChaos?: boolean;
-  interval?: number;
-  consoleNoiseLevel?: 'low' | 'medium' | 'high';
+  interval?: number;  // frequency
+  consoleNoiseLevel?: 'low' | 'medium' | 'high'; // volume
 }
 
 export function enableRealDevHours(config: RealDevHoursConfig = {}) {
